@@ -1,37 +1,33 @@
 # Sales Prediction Using Multiple Linear Regression
 
 ## 1. Introduction
+This project is based on Multiple Linear Regression. The aim is to predict product sales using advertising expenditure on different platforms such as TV, Radio, and Newspaper.
 
-This project is based on predicting product sales using Multiple Linear Regression. It uses advertising expenditure on TV, Radio and Newspaper to predict sales.
-
-The project is implemented using Python in Google Colab with a dataset downloaded from Kaggle.
+This activity helps in understanding how multiple input features are used to predict a continuous output.
 
 ## 2. Objective
-
-The main objective of this project is to understand how multiple input features are used together to predict a continuous numerical value using Multiple Linear Regression.
+- To understand Multiple Linear Regression.
+- To study the relationship between advertising expenditure and sales.
+- To train a regression model using a dataset.
+- To predict sales and evaluate the model's performance.
 
 ## 3. Dataset Information
-
 - **Dataset Name:** Advertising Sales Dataset
-- **Source:** [Kaggle – Advertising Dataset](https://www.kaggle.com/datasets/bumba5341/advertisingcsv)
+- **Source:** Kaggle
+- **Dataset Link:** https://www.kaggle.com/datasets/bumba5341/advertisingcsv
 - **File Format:** CSV
 - **Number of Records:** 200
-- **Number of Main Features:** 3
-- **Target Variable:** Sales
 
-### Dataset Features
+The dataset contains the following columns:
 
-| Feature | Description |
+| Column | Description |
 |---|---|
-| TV | Advertising expenditure on TV |
-| Radio | Advertising expenditure on Radio |
-| Newspaper | Advertising expenditure on Newspaper |
+| TV | Advertising cost on TV |
+| Radio | Advertising cost on Radio |
+| Newspaper | Advertising cost on Newspaper |
 | Sales | Product sales |
 
-The three advertising features are used as independent variables, and Sales is used as the dependent variable.
-
-## 4. Technologies Used
-
+## 4. Tools and Technologies Used
 - Python
 - Google Colab
 - Pandas
@@ -41,31 +37,27 @@ The three advertising features are used as independent variables, and Sales is u
 - Scikit-learn
 - Statsmodels
 
-## 5. Project Steps
+## 5. Work Completed
+The following steps were completed in this activity:
 
-1. Importing the required libraries.
-2. Loading and understanding the dataset.
-3. Checking missing values and duplicate records.
-4. Cleaning the dataset.
-5. Visualizing relationships using scatter plots.
-6. Creating a correlation matrix and heatmap.
-7. Performing manual Multiple Linear Regression calculations using two features.
-8. Building a Single Linear Regression model using one feature.
-9. Building a Multiple Linear Regression model using three features.
-10. Comparing both models.
-11. Interpreting the regression equation, intercept and coefficients.
-12. Comparing actual and predicted sales.
-13. Evaluating the model using MAE, MSE, RMSE, R² and Adjusted R².
-14. Performing residual analysis.
-15. Checking multicollinearity using VIF.
-16. Predicting sales using new input values.
-17. Drawing conclusions from the results.
+1. Selected and loaded the Advertising Sales dataset.
+2. Checked the dataset shape, information, and statistical description.
+3. Checked for missing values and duplicate records.
+4. Created scatter plots to understand the relationship between advertising features and sales.
+5. Created a correlation matrix and heatmap.
+6. Performed manual calculations using selected dataset observations.
+7. Implemented Simple Linear Regression using one input feature.
+8. Implemented Multiple Linear Regression using TV, Radio, and Newspaper.
+9. Studied the model coefficients and intercept.
+10. Compared actual and predicted sales values.
+11. Evaluated the model using MAE, MSE, RMSE, R-squared, and Adjusted R-squared.
+12. Performed residual analysis and checked multicollinearity using VIF.
+13. Used the trained model to predict sales for new input values.
 
-## 6. Machine Learning Algorithm
-
+## 6. Algorithm Used
 **Multiple Linear Regression**
 
-Multiple Linear Regression is a supervised Machine Learning algorithm used to predict a continuous numerical value using two or more independent variables.
+The model uses three input features to predict sales.
 
 The general equation is:
 
@@ -73,57 +65,37 @@ Sales = b0 + b1(TV) + b2(Radio) + b3(Newspaper)
 
 Where:
 - b0 = Intercept
-- b1, b2, b3 = Regression coefficients
-- TV, Radio and Newspaper = Independent variables
+- b1, b2, b3 = Model coefficients
 
-## 7. Model Evaluation
+## 7. Key Results
+The model was trained and tested using the dataset. Its performance was evaluated using different regression evaluation metrics.
 
-The model is evaluated using the following metrics:
+- **MAE:** 1.4607567168117603
+- **MSE:** 3.1740973539761033
+- **RMSE:** 1.78159966153345
+- **R-squared:** 0.89943802410091
+- **Adjusted R-squared:** 0.8910578594426547
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-- Adjusted R² Score
+The actual and predicted sales values were also compared to understand the model's performance.
 
-These metrics help understand the prediction errors and performance of the model.
+## 8. Conclusion
+In this activity, I implemented Multiple Linear Regression to predict sales using advertising expenditure on TV, Radio, and Newspaper. I also performed data analysis, visualisation, model evaluation, and prediction.
 
-## 8. Results
+Through this activity, I understood how Multiple Linear Regression works and how its performance can be evaluated.
 
-The notebook includes:
-- Manual calculation and verification using Scikit-learn.
-- Single-feature and multiple-feature model comparison.
-- Regression coefficients and intercept.
-- Actual and predicted sales comparison.
-- Residual plots and histogram.
-- Correlation heatmap and VIF results.
-- Prediction for a new advertising budget.
+## 9. Repository Contents
+- `Sales_Prediction.ipynb` – Completed Google Colab notebook.
+- `README.md` – Project information and description.
+- `Advertising.csv` – Dataset used for the project, if redistribution is permitted by its source.
 
-*Actual numerical results and observations are available in the completed Google Colab notebook.*
+## 10. GitHub Submission Information
+**Submission GitHub ID:** [complexiota](https://github.com/complexiota)
 
-## 9. Conclusion
+**Repository Name:** `Activity1_Multiple_Linear_Regression_[YourRollNumber]`
 
-This project helped me understand how Multiple Linear Regression works and how different advertising features can be used to predict sales.
+**Repository Visibility:** Public
 
-I learned how to load and inspect a dataset, perform data visualization, calculate regression coefficients, train a model, evaluate its performance and make predictions.
-
-The project also helped me understand the importance of residual analysis, multicollinearity and comparing single-feature and multiple-feature models.
-
-## 10. Repository Contents
-
-```text
-Sales_Prediction_MLR/
-│
-├── Advertising.csv
-├── Sales_Prediction.ipynb
-├── README.md
-```
+**Student:** Purva Pangarkar  
+**Activity:** Multiple Linear Regression
 
 
-**Project Type:** Machine Learning
-
-**Algorithm:** Multiple Linear Regression
-
-**Level:** Beginner
-
-**Platform:** Google Colab
