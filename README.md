@@ -78,6 +78,16 @@ The model was trained and tested using the dataset. Its performance was evaluate
 
 The actual and predicted sales values were also compared to understand the model's performance.
 
+## Decision Log
+
+1. **Dataset Selection:** I selected the Advertising Sales dataset because it contains multiple numerical input features (TV, Radio and Newspaper) and a numerical target (Sales).
+
+2. **Feature Selection:** I used TV, Radio and Newspaper advertising expenditure as input features to predict sales.
+
+3. **Model Comparison:** I implemented both Simple Linear Regression and Multiple Linear Regression to understand how using multiple input features affects prediction performance.
+
+4. **Model Evaluation:** I used MAE, MSE, RMSE, R-squared and Adjusted R-squared to evaluate the model's performance.
+
 ## 8. Conclusion
 In this activity, I implemented Multiple Linear Regression to predict sales using advertising expenditure on TV, Radio, and Newspaper. I also performed data analysis, visualisation, model evaluation, and prediction.
 
